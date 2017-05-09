@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.food.Foods" table="foods">
+        <id name="sno" type="int" column="sno">
+            <generator class="increment" />
+        </id>
+        <property name="productID">
+            <column name="productID" />
+        </property>
+        <property name="userID">
+            <column name="userID" />
+        </property>
+        <property name="profileName">
+            <column name="profileName" />
+        </property>
+        <property name="helpfulness">
+            <column name="helpfulness" />
+        </property>
+        <property name="reviewscore">
+            <column name="reviewscore" />
+        </property>
+        <property name="time">
+            <column name="time" />
+        </property>
+        <property name="summary">
+            <column name="summary" />
+        </property>
+        <property name="text">
+            <column name="text" />
+        </property>
+        <property name="score">
+            <column name="score" />
+        </property>
+    </class>
+</hibernate-mapping>
